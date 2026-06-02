@@ -132,7 +132,9 @@ only thing that differs between checkpoints is the positional-encoding
 implementation and the random seed). The full set (~3.8 GB) is hosted
 on Google Drive:
 
-- **Our ImageNet-100 ViT-Base models:** [INSERT GOOGLE DRIVE LINK HERE]
+- **Our ImageNet-100 ViT-Base models:** 
+  [Google Drive folder (~3.8 GB)](https://drive.google.com/drive/folders/1WRhjaR3WZHIi2fTi9xcrIBJkBXZddMM9)
+  — public access, no Google account required.
 
 The folder layout expected by `model_loader.py` is:
 
@@ -425,9 +427,9 @@ Full per-layer tables, ratio sweeps, and the figure are produced by
 
 ## Paper and citation
 
-The paper is currently under submission. Citation details will be added
-once the submission status is finalized. In the meantime, please reference
-this repository directly if you build on the code or use the results.
+The paper is currently under submission. In the meantime, please
+reference this repository directly if you build on the code or use the
+results.
 
 ```bibtex
 @misc{bandjur2026pecompression,
@@ -439,8 +441,8 @@ this repository directly if you build on the code or use the results.
 }
 ```
 
-The companion transfer paper, which trained the twelve ViT-Base
-checkpoints reused in this work, should also be cited when relevant:
+The companion transfer paper uses the same twelve ViT-Base checkpoints
+as this work and should also be cited when relevant:
 
 ```bibtex
 @misc{bandjur2026petransfer,
