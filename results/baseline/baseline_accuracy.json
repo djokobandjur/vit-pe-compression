@@ -1,0 +1,117 @@
+{
+  "_metadata": {
+    "val_root": "/content/imagenet100/val",
+    "val_size": 5000,
+    "num_classes_in_val": 100,
+    "batch_size": 128,
+    "device": "cuda"
+  },
+  "learned_seed42": {
+    "pe_type": "learned",
+    "seed": 42,
+    "top1_accuracy": 0.7944,
+    "trainable_params": 85875556,
+    "buffer_params": 0,
+    "eval_time_s": 6.097676992416382,
+    "load_time_s": 4.334406852722168
+  },
+  "learned_seed123": {
+    "pe_type": "learned",
+    "seed": 123,
+    "top1_accuracy": 0.7962,
+    "trainable_params": 85875556,
+    "buffer_params": 0,
+    "eval_time_s": 5.108832597732544,
+    "load_time_s": 9.603070497512817
+  },
+  "learned_seed456": {
+    "pe_type": "learned",
+    "seed": 456,
+    "top1_accuracy": 0.7878,
+    "trainable_params": 85875556,
+    "buffer_params": 0,
+    "eval_time_s": 5.119929552078247,
+    "load_time_s": 8.034151315689087
+  },
+  "sinusoidal_seed42": {
+    "pe_type": "sinusoidal",
+    "seed": 42,
+    "top1_accuracy": 0.821,
+    "trainable_params": 85724260,
+    "buffer_params": 151296,
+    "eval_time_s": 5.1040613651275635,
+    "load_time_s": 5.8536505699157715
+  },
+  "sinusoidal_seed123": {
+    "pe_type": "sinusoidal",
+    "seed": 123,
+    "top1_accuracy": 0.8192,
+    "trainable_params": 85724260,
+    "buffer_params": 151296,
+    "eval_time_s": 5.104400873184204,
+    "load_time_s": 5.143768072128296
+  },
+  "sinusoidal_seed456": {
+    "pe_type": "sinusoidal",
+    "seed": 456,
+    "top1_accuracy": 0.8124,
+    "trainable_params": 85724260,
+    "buffer_params": 151296,
+    "eval_time_s": 5.102555990219116,
+    "load_time_s": 5.762719392776489
+  },
+  "rope_seed42": {
+    "pe_type": "rope",
+    "seed": 42,
+    "top1_accuracy": 0.849,
+    "trainable_params": 85724260,
+    "buffer_params": 302976,
+    "eval_time_s": 5.539703369140625,
+    "load_time_s": 5.7988762855529785
+  },
+  "rope_seed123": {
+    "pe_type": "rope",
+    "seed": 123,
+    "top1_accuracy": 0.8422,
+    "trainable_params": 85724260,
+    "buffer_params": 302976,
+    "eval_time_s": 5.504150152206421,
+    "load_time_s": 7.223076820373535
+  },
+  "rope_seed456": {
+    "pe_type": "rope",
+    "seed": 456,
+    "top1_accuracy": 0.8446,
+    "trainable_params": 85724260,
+    "buffer_params": 302976,
+    "eval_time_s": 5.5041539669036865,
+    "load_time_s": 10.037648439407349
+  },
+  "alibi_seed42": {
+    "pe_type": "alibi",
+    "seed": 42,
+    "top1_accuracy": 0.814,
+    "trainable_params": 85724260,
+    "buffer_params": 465852,
+    "eval_time_s": 5.260536432266235,
+    "load_time_s": 7.330464124679565
+  },
+  "alibi_seed123": {
+    "pe_type": "alibi",
+    "seed": 123,
+    "top1_accuracy": 0.8114,
+    "trainable_params": 85724260,
+    "buffer_params": 465852,
+    "eval_time_s": 5.279237985610962,
+    "load_time_s": 7.5225396156311035
+  },
+  "alibi_seed456": {
+    "pe_type": "alibi",
+    "seed": 456,
+    "top1_accuracy": 0.807,
+    "trainable_params": 85724260,
+    "buffer_params": 465852,
+    "eval_time_s": 5.252687454223633,
+    "load_time_s": 6.289106607437134
+  }
+}

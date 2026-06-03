@@ -1,0 +1,446 @@
+{
+  "_metadata": {
+    "bits": [
+      32,
+      8,
+      4,
+      2
+    ],
+    "scopes": [
+      "pe_buffer_cache"
+    ],
+    "val_size": 5000
+  },
+  "learned_seed42__pe_buffer_cache__b32": {
+    "pe_type": "learned",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.7944,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.3899078369140625
+  },
+  "learned_seed42__pe_buffer_cache__b08": {
+    "pe_type": "learned",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.7942,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.1495726108551025
+  },
+  "learned_seed42__pe_buffer_cache__b04": {
+    "pe_type": "learned",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.7946,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.1292665004730225
+  },
+  "learned_seed42__pe_buffer_cache__b02": {
+    "pe_type": "learned",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.7578,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.140540838241577
+  },
+  "learned_seed123__pe_buffer_cache__b32": {
+    "pe_type": "learned",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.7962,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.137934446334839
+  },
+  "learned_seed123__pe_buffer_cache__b08": {
+    "pe_type": "learned",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.7966,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.138349533081055
+  },
+  "learned_seed123__pe_buffer_cache__b04": {
+    "pe_type": "learned",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.7964,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.130896329879761
+  },
+  "learned_seed123__pe_buffer_cache__b02": {
+    "pe_type": "learned",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.761,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.135174512863159
+  },
+  "learned_seed456__pe_buffer_cache__b32": {
+    "pe_type": "learned",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.7878,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.139583587646484
+  },
+  "learned_seed456__pe_buffer_cache__b08": {
+    "pe_type": "learned",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.788,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.15476131439209
+  },
+  "learned_seed456__pe_buffer_cache__b04": {
+    "pe_type": "learned",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.788,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.141825914382935
+  },
+  "learned_seed456__pe_buffer_cache__b02": {
+    "pe_type": "learned",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.7446,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.1531150341033936
+  },
+  "sinusoidal_seed42__pe_buffer_cache__b32": {
+    "pe_type": "sinusoidal",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.821,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.141188859939575
+  },
+  "sinusoidal_seed42__pe_buffer_cache__b08": {
+    "pe_type": "sinusoidal",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.821,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.159930944442749
+  },
+  "sinusoidal_seed42__pe_buffer_cache__b04": {
+    "pe_type": "sinusoidal",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.8202,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.143980503082275
+  },
+  "sinusoidal_seed42__pe_buffer_cache__b02": {
+    "pe_type": "sinusoidal",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.8112,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.167842388153076
+  },
+  "sinusoidal_seed123__pe_buffer_cache__b32": {
+    "pe_type": "sinusoidal",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.8192,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.1505584716796875
+  },
+  "sinusoidal_seed123__pe_buffer_cache__b08": {
+    "pe_type": "sinusoidal",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.8192,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.145428895950317
+  },
+  "sinusoidal_seed123__pe_buffer_cache__b04": {
+    "pe_type": "sinusoidal",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.8186,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.1598169803619385
+  },
+  "sinusoidal_seed123__pe_buffer_cache__b02": {
+    "pe_type": "sinusoidal",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.8116,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.147263288497925
+  },
+  "sinusoidal_seed456__pe_buffer_cache__b32": {
+    "pe_type": "sinusoidal",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.8124,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.146597623825073
+  },
+  "sinusoidal_seed456__pe_buffer_cache__b08": {
+    "pe_type": "sinusoidal",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.8124,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.167848348617554
+  },
+  "sinusoidal_seed456__pe_buffer_cache__b04": {
+    "pe_type": "sinusoidal",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.8138,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.148004531860352
+  },
+  "sinusoidal_seed456__pe_buffer_cache__b02": {
+    "pe_type": "sinusoidal",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.8046,
+    "tensors_quantized": 1,
+    "eval_time_s": 5.1708691120147705
+  },
+  "rope_seed42__pe_buffer_cache__b32": {
+    "pe_type": "rope",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.849,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.538998126983643
+  },
+  "rope_seed42__pe_buffer_cache__b08": {
+    "pe_type": "rope",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.8492,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.547971725463867
+  },
+  "rope_seed42__pe_buffer_cache__b04": {
+    "pe_type": "rope",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.85,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.53682541847229
+  },
+  "rope_seed42__pe_buffer_cache__b02": {
+    "pe_type": "rope",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.839,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.5349485874176025
+  },
+  "rope_seed123__pe_buffer_cache__b32": {
+    "pe_type": "rope",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.8422,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.631385087966919
+  },
+  "rope_seed123__pe_buffer_cache__b08": {
+    "pe_type": "rope",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.8424,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.631423711776733
+  },
+  "rope_seed123__pe_buffer_cache__b04": {
+    "pe_type": "rope",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.84,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.634673833847046
+  },
+  "rope_seed123__pe_buffer_cache__b02": {
+    "pe_type": "rope",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.8324,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.629171133041382
+  },
+  "rope_seed456__pe_buffer_cache__b32": {
+    "pe_type": "rope",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.8446,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.529393196105957
+  },
+  "rope_seed456__pe_buffer_cache__b08": {
+    "pe_type": "rope",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.8446,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.533040285110474
+  },
+  "rope_seed456__pe_buffer_cache__b04": {
+    "pe_type": "rope",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.8456,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.541564464569092
+  },
+  "rope_seed456__pe_buffer_cache__b02": {
+    "pe_type": "rope",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.8368,
+    "tensors_quantized": 24,
+    "eval_time_s": 5.54220986366272
+  },
+  "alibi_seed42__pe_buffer_cache__b32": {
+    "pe_type": "alibi",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.814,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.304975509643555
+  },
+  "alibi_seed42__pe_buffer_cache__b08": {
+    "pe_type": "alibi",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.8148,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.281702518463135
+  },
+  "alibi_seed42__pe_buffer_cache__b04": {
+    "pe_type": "alibi",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.779,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.28931736946106
+  },
+  "alibi_seed42__pe_buffer_cache__b02": {
+    "pe_type": "alibi",
+    "seed": 42,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.7316,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.296830177307129
+  },
+  "alibi_seed123__pe_buffer_cache__b32": {
+    "pe_type": "alibi",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.8114,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.288519859313965
+  },
+  "alibi_seed123__pe_buffer_cache__b08": {
+    "pe_type": "alibi",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.8128,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.2904298305511475
+  },
+  "alibi_seed123__pe_buffer_cache__b04": {
+    "pe_type": "alibi",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.7706,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.2919347286224365
+  },
+  "alibi_seed123__pe_buffer_cache__b02": {
+    "pe_type": "alibi",
+    "seed": 123,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.7406,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.298231601715088
+  },
+  "alibi_seed456__pe_buffer_cache__b32": {
+    "pe_type": "alibi",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 32,
+    "top1_accuracy": 0.807,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.305438995361328
+  },
+  "alibi_seed456__pe_buffer_cache__b08": {
+    "pe_type": "alibi",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 8,
+    "top1_accuracy": 0.807,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.310034513473511
+  },
+  "alibi_seed456__pe_buffer_cache__b04": {
+    "pe_type": "alibi",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 4,
+    "top1_accuracy": 0.7764,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.306416988372803
+  },
+  "alibi_seed456__pe_buffer_cache__b02": {
+    "pe_type": "alibi",
+    "seed": 456,
+    "scope": "pe_buffer_cache",
+    "bits": 2,
+    "top1_accuracy": 0.7318,
+    "tensors_quantized": 12,
+    "eval_time_s": 5.291281700134277
+  }
+}
