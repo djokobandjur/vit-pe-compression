@@ -70,11 +70,14 @@ vit-pe-compression/
 │   └── val_labels.txt              # 50k ILSVRC2012 val labels (used by setup script)
 │ 
 ├── models/
+│   ├── __init__.py                 # exports VisionTransformer + load_pretrained_model
 │   ├── vit_architecture.py         # ViT-Base + 4 PE variants (Learned, Sinusoidal, RoPE, ALiBi)
 │   └── model_loader.py             # loads .pth checkpoints into the right PE variant
+│ 
 ├── notebooks/
 │   ├── 01_compression_sanity_check.ipynb   # loads one checkpoint, runs a small pruning probe
 │   └── 02_compression_main_workflow.ipynb  # end-to-end pipeline, Colab-friendly
+│ 
 ├── scripts/
 │   ├── setup_imagenet100_val.py    # build ImageNet-100 val/ from ILSVRC2012 tar
 │   ├── baseline_eval.py            # uncompressed top-1 accuracy → baseline_accuracy.json
