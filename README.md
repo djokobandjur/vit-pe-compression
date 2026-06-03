@@ -161,8 +161,7 @@ The folder layout expected by `model_loader.py` is:
 └── alibi_seed456/best_model.pth
 ```
 
-The Zenodo deposit of this repository (DOI placeholder pending
-submission acceptance) will archive the code, accuracy matrices, and
+The Zenodo deposit of this repository [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20527499.svg)](https://doi.org/10.5281/zenodo.20527499) will archive the code, accuracy matrices, and
 figures, providing a stable, citable record of the compression
 artifacts. The checkpoint files themselves remain on Google Drive due
 to size (~3.8 GB).
