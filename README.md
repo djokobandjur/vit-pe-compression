@@ -64,7 +64,11 @@ vit-pe-compression/
 ├── .gitignore
 │
 ├── data/
-│   └── imagenet100_classes.txt     # 100 class IDs (same subset as transfer paper)
+│   ├── __init__.py                 # exports get_imagenet100_val_loader
+│   ├── datasets.py                 # DataLoader: ImageFolder + ImageNet transforms
+│   ├── imagenet100_classes.txt     # 100 class IDs (same subset as transfer paper)
+│   └── val_labels.txt              # 50k ILSVRC2012 val labels (used by setup script)
+│ 
 ├── models/
 │   ├── vit_architecture.py         # ViT-Base + 4 PE variants (Learned, Sinusoidal, RoPE, ALiBi)
 │   └── model_loader.py             # loads .pth checkpoints into the right PE variant
@@ -173,10 +177,11 @@ documented in *Trained models*.
 
 **2. ImageNet-1k validation tar (required)**
 
-All experiments operate on the ImageNet-100 validation split, which is
-extracted from the original `ILSVRC2012_img_val.tar`. Obtain the tar
-from [image-net.org](https://www.image-net.org/download.php) — the file
-is not redistributed here for licensing reasons.
+The class list (`data/imagenet100_classes.txt`) and the full ILSVRC2012
+val label index (`data/val_labels.txt`) are shipped in this repository,
+so the only path you need to set is where the tar lives. In the notebook
+this is the `IMAGENET_TAR` variable; on the CLI it is `--tar_path` to
+`setup_imagenet100_val.py`.
 
 The class list (`data/imagenet100_classes.txt`) is shipped in this
 repository, so the only path you need to set is where the tar lives.
