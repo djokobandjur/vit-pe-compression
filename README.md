@@ -20,8 +20,8 @@ question: does PE choice also determine which parts of a trained ViT are
 structurally essential — i.e. which components survive aggressive
 compression and which collapse?
 
-The same twelve ViT-Base/16 checkpoints from the companion paper (4 PE
-families × 3 seeds, pretrained on ImageNet-100) are subjected to three
+The twelve ViT-Base/16 checkpoints used in this study (4 PE families × 3
+seeds, pretrained on ImageNet-100) are subjected to three
 one-shot compression techniques applied without any fine-tuning:
 unstructured magnitude pruning (4 scopes × 7 ratios), structured pruning
 of attention heads and MLP neurons (2 scopes × 11 ratio settings),
@@ -326,7 +326,7 @@ keeps the checkpoints outside the Git working tree:
 
 ```
 <DATA_HOME>/                            # any location with sufficient disk space
-└── Trained models_ImageNet100/         # 12 checkpoints (downloaded from companion repo)
+└── Trained models_ImageNet100/         # 12 checkpoints (downloaded from Google drive)
 
 <RESULTS_ROOT>/                         # all compression outputs (small, ~5 MB total)
 ├── baseline/
@@ -367,7 +367,7 @@ code changes are needed to relocate the pipeline. A few practical points:
   single NVIDIA RTX PRO 6000 Blackwell Server Edition (102 GB) with
   PyTorch 2.11 and CUDA 12.8. Pretraining the underlying twelve
   checkpoints required ~102 GPU-hours on a mixed pool of H100 and A100
-  sessions (companion paper).
+  sessions.
 
 ---
 
@@ -438,19 +438,6 @@ results.
   year   = {2026},
   note   = {Manuscript under submission.
             Code: \url{https://github.com/djokobandjur/vit-pe-compression}}
-}
-```
-
-The companion transfer paper uses the same twelve ViT-Base checkpoints
-as this work and should also be cited when relevant:
-
-```bibtex
-@misc{bandjur2026petransfer,
-  title  = {How Positional Encoding Shapes Transferable Representations in Vision Transformers},
-  author = {Bandjur, Djoko and Bandjur, Milos and Micic, Aleksandar},
-  year   = {2026},
-  note   = {Manuscript submitted.
-            Code: \url{https://github.com/djokobandjur/vit-pe-transfer}}
 }
 ```
 
