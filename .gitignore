@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Intermediate staging and asset regeneration directories (regenerable from results/ JSONs)
+**/_assets_staging/
+**/results_assets/
+**/appendix_assets/
