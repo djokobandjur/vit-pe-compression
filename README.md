@@ -1,13 +1,12 @@
 # Positional Encoding Determines Structural Redundancy in Vision Transformers
 
-[![Paper Status](https://img.shields.io/badge/paper-under%20submission-orange)](#paper-and-citation)
-[![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-yellow.svg)](LICENSE)
-[![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20527499.svg)](https://doi.org/10.5281/zenodo.20527499)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 Code, reproducibility scripts, and full accuracy matrices for the paper
 *"Positional Encoding Determines Structural Redundancy in Vision Transformers"*
 (manuscript under submission).
-
 ---
 
 ## What is this repository?
@@ -161,9 +160,7 @@ The folder layout expected by `model_loader.py` is:
 └── alibi_seed456/best_model.pth
 ```
 
-The Zenodo deposit of this repository [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20527499.svg)](https://doi.org/10.5281/zenodo.20527499) will archive the code, accuracy matrices, and
-figures, providing a stable, citable record of the compression
-artifacts. The checkpoint files themselves remain on Google Drive due
+The code, accuracy matrices, and figures in this repository are archived on Zenodo (see DOI badge at the top of this README) for a stable, citable record. The checkpoint files themselves remain on Google Drive due to size (~3.8 GB).. The checkpoint files themselves remain on Google Drive due
 to size (~3.8 GB).
 
 ---
