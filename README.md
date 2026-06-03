@@ -86,7 +86,8 @@ vit-pe-compression/
 │   ├── ptq_quantization.py         # post-training quantization sweep → ptq.json
 │   ├── cka_pruning.py              # layer-wise CKA between original and pruned models
 │   ├── analyze_results.py          # per-PE summary tables (CSVs)
-│   └── generate_results_assets.py  # main-text figures (PDF/PNG)
+│   ├── generate_results_assets.py  # main-text figures (PDF/PNG)
+│   └── generate_appendix_assets.py # 14 appendix tables (LaTeX includes)
 │
 ├── results/                        # complete accuracy matrices (876 configs)
 │   ├── baseline/
@@ -127,6 +128,7 @@ vit-pe-compression/
 | `cka_pruning.py` | Layer-wise linear CKA between original and pruned models on a fixed 2000-image stimulus subset of ImageNet-100 val. Two scopes (global, MLP); four ratios. | `results/cka/cka_pruning.json` |
 | `analyze_results.py` | Aggregates the JSON outputs into per-PE summary CSVs. | `results/analysis/*.csv` |
 | `generate_results_assets.py` | Produces the three main-text figures used in the paper from the JSON outputs. | `figures/fig_*.{pdf,png}` |
+| `generate_appendix_assets.py` | Produces the 14 LaTeX include files for paper Appendix A (magnitude pruning, structured pruning, PTQ) and Appendix B (layer-wise CKA grid). Expects all JSON outputs in a flat directory. | `<out_dir>/tab_app_*.tex` |
 
 ---
 
@@ -314,17 +316,41 @@ python -m scripts.analyze_results \
     --output_dir "<RESULTS_ROOT>/analysis"
 ```
 
-**6. Regenerate paper figures**
+**6. Regenerate paper figures and appendix tables**
+
+The asset generators expect JSON inputs in a flat directory, so first
+stage the experiment outputs:
+
+```bash
+mkdir -p "<RESULTS_ROOT>/_assets_staging"
+cp "<RESULTS_ROOT>/baseline/baseline_accuracy.json" \
+   "<RESULTS_ROOT>/pruning/magnitude.json" \
+   "<RESULTS_ROOT>/pruning/magnitude_pe_buffer.json" \
+   "<RESULTS_ROOT>/pruning/structured.json" \
+   "<RESULTS_ROOT>/quantization/ptq.json" \
+   "<RESULTS_ROOT>/quantization/ptq_pe_buffer.json" \
+   "<RESULTS_ROOT>/cka/cka_pruning.json" \
+   "<RESULTS_ROOT>/_assets_staging/"
+```
+
+Then generate the main-text figures (PDF/PNG):
 
 ```bash
 python -m scripts.generate_results_assets \
-    --json_dir "<RESULTS_ROOT>" \
-    --out_dir  "figures"
+    --json_dir "<RESULTS_ROOT>/_assets_staging" \
+    --out_dir  "<RESULTS_ROOT>/results_assets"
 ```
 
-The generator reads each JSON by basename and writes the three main-text
-figures (`fig_heads_pruning`, `fig_pe_buffer`, `fig_cka_depth`) in both
-PDF and PNG formats.
+And the 14 LaTeX appendix tables:
+
+```bash
+python -m scripts.generate_appendix_assets \
+    --json_dir "<RESULTS_ROOT>/_assets_staging" \
+    --out_dir  "<RESULTS_ROOT>/appendix_assets"
+```
+
+The notebook (`02_compression_main_workflow.ipynb` section 9) performs
+this staging automatically.
 
 ### Recommended data layout
 
