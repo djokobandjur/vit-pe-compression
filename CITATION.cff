@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the v2.0.0 replication release and the associated paper."
+message: "If you use this replication archive, please cite this v2.0.0 release and the associated paper."
 title: "Replication package for Intervention Geometry Shapes Apparent Positional-Encoding Robustness in Vision Transformers"
 type: software
 authors:
@@ -11,6 +11,5 @@ authors:
     given-names: "Miloš"
     affiliation: "Faculty of Technical Sciences, University of Pristina"
 version: "2.0.0"
-date-released: "2026-09-06"
+date-released: "2026-09-07"
 repository-code: "https://github.com/djokobandjur/vit-pe-compression"
-license: MIT
