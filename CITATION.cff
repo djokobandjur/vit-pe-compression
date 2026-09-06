@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this replication archive, please cite this v2.0.0 release and the associated paper."
+message: "If you use this replication package, please cite the exact v2.0.0 Zenodo release."
 title: "Replication package for Intervention Geometry Shapes Apparent Positional-Encoding Robustness in Vision Transformers"
 type: software
 authors:
@@ -12,4 +12,9 @@ authors:
     affiliation: "Faculty of Technical Sciences, University of Pristina"
 version: "2.0.0"
 date-released: "2026-09-07"
+doi: "10.5281/zenodo.22556912"
 repository-code: "https://github.com/djokobandjur/vit-pe-compression"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20527499"
+    description: "Concept DOI for all versions; resolves to the latest release"
