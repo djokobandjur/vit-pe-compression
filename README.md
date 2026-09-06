@@ -7,108 +7,97 @@ Reproducibility repository for the manuscript
 Faculty of Technical Sciences, University of Pristina, Kosovska Mitrovica, Serbia
 
 > **Public replication release:** `v2.0.0` (2026-09-07).  
-> The historical `v1.0.0` release is preserved for provenance, but it represents the earlier compression-grid manuscript and is **not** the authoritative replication release for the final study.
+> The historical `v1.0.0` release remains preserved as provenance for the earlier compression-grid scope.
 
 [![License: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](LICENSE)
 [![Results: CC BY 4.0](https://img.shields.io/badge/results%20%26%20figures-CC%20BY%204.0-lightgrey.svg)](LICENSE_SCOPE.md)
 
+## DOI policy
+
+- **Concept DOI (all versions; resolves to the latest release):** `10.5281/zenodo.20527499`
+- **Exact v2.0.0 version DOI:** `10.5281/zenodo.22556912`
+- **Historical v1.0.0 version DOI:** `10.5281/zenodo.20527500`
+
+The manuscript and Supplement cite the **concept DOI** so their persistent repository link always resolves to the newest public release. For exact byte-level citation or reproduction of v2.0.0, cite the **version DOI** `10.5281/zenodo.22556912`.
+
 ## What changed from v1.0.0?
 
-The original repository captured the motivating ViT-B/16 compression grid: four positional-encoding (PE) families, three seeds, head/neuron pruning, magnitude pruning, post-training quantization, and layer-wise CKA. That grid remains useful and is preserved in `scripts/`, `results/`, `models/`, and `notebooks/`.
+The original repository captured the motivating ViT-B/16 compression grid: four positional-encoding families, three seeds, head/neuron pruning, magnitude pruning, post-training quantization, and layer-wise CKA. That historical code/results tree remains available in `scripts/`, `results/`, `models/`, and `notebooks/`.
 
-The final paper asks a stricter mechanistic question: **when can task damage under compression or ablation be interpreted as evidence of structural redundancy?** The answer requires auditing the *realized intervention*, not only its nominal sparsity, head count, or bit width.
-
-The `v2.0.0` release therefore adds the complete frozen evidence chain used by the final manuscript:
+The final study asks a stricter mechanistic question: **when can task damage under compression or ablation be interpreted as evidence of structural redundancy?** The v2.0.0 replication release therefore adds the controlled-intervention evidence chain used by the final paper:
 
 - exact-count head masks and depth-topology controls;
-- balanced `K=48` comparison showing that block balancing cuts the 62.55-point ALiBi–RoPE head-masking gap by 61.55 points across 3/3 seed pairs, while the residual balanced gap remains unresolved;
-- a separately frozen balanced-`K=72` selector replication in which activation ranking beats random for ALiBi and loses for RoPE;
-- realized-operator diagnostics for additive PE, RoPE, and ALiBi;
-- the additive input-scale audit (including the canonical Sinusoidal `sqrt(d/2)` scale effect);
-- scalar displacement analyses and within-family order reversals;
-- the **post-hoc** ALiBi LOW/MID/HIGH slope-permutation bracket, which preserves the clean slope multiset and registered norm invariants while damage spans 29.63 to 76.39 percentage points with LOW<MID<HIGH in 6/6 checkpoints;
-- selector-held-out, random-repeat, DTCD, Taylor-omission, and Monte-Carlo sensitivity records;
-- exact checkpoint identities, sample/calibration manifests, protocol/run identifiers, source hashes, and artifact SHA-256 provenance.
+- balanced `K=48` topology matching;
+- separately frozen balanced-`K=72` selector replication;
+- realized-operator and additive input-scale diagnostics;
+- causal positional controls and scalar-displacement reversals;
+- the explicitly **post-hoc** ALiBi LOW/MID/HIGH slope-permutation bracket;
+- selector-held-out, random-repeat, DTCD, Taylor-omission, and Monte-Carlo sensitivity evidence;
+- exact checkpoint identities, masks, calibration/sample manifests, protocol/run identifiers, and SHA-256 provenance.
 
 ## Authoritative v2.0.0 replication archive
 
-The public scientific replication archive is:
+The public replication archive is:
 
-`VITPECOMP_PUBLIC_REPLICATION_v2_0_0_20260907.zip`
-
-SHA-256:
-
-`aba6bb687262f1795f4614fbae6dc7637232a5cd8c0b00a6ff29dc800923e5a8`
-
-This archive is deliberately **science-only** at the release boundary: it contains the byte-frozen scientific master plus release/citation/license metadata, but does not embed the later editorial Main/Supplement or Editorial Manager source bundles. That separation keeps the scientific archive immutable and avoids a DOI-insertion circularity in the submission source.
-
-The core payload is:
-
-`VITPECOMP_NN_SCIENTIFIC_FINAL_v0_20_20260902.zip`
+`VITPECOMP_REPLICATION_PACKAGE_v2_0_0_20260907.zip`
 
 SHA-256:
 
-`2c6e20e9f099cdd9aa0120cd231e29a9f31838b96e9626449a0b214157df3668`
+`70c7ec84a30de6614c1ee7daa30f7eee41bfb278e678fca810f301608945556c`
 
-The `NN` token in this frozen inner filename is a historical artifact identifier and has not been renamed because its filename and hash are part of the provenance lock.
+This ZIP is deliberately **replication-only**. It does **not** contain the manuscript, Supplement, bibliography, cover letter, highlights, or Editorial Manager source package. It was assembled from byte-preserved scientific artifacts in the frozen source snapshots while excluding publication-development material.
 
-The scientific master contains the complete governance archive `VIT_PE_COMPRESSION_REVISION_CONTROL_v1_39_20260902.zip` and the executed evidence/protocol packages.
+Source provenance retained by hash:
+
+- frozen scientific source snapshot `VITPECOMP_NN_SCIENTIFIC_FINAL_v0_20_20260902.zip` — SHA-256 `2c6e20e9f099cdd9aa0120cd231e29a9f31838b96e9626449a0b214157df3668`;
+- governance source snapshot `VIT_PE_COMPRESSION_REVISION_CONTROL_v1_39_20260902.zip` — SHA-256 `1abd1279e7fecb8c2efe47c798e8436b201353d0ad8dd23ccafc73f98f1879b2`.
+
+Those full source ZIPs are **not** the public v2.0.0 release because they include publication-development material. The public archive copies only the required code/notebooks, protocols, executed evidence, masks/manifests, registries, plot data, and expected outputs and carries its own release-level SHA-256 manifest.
 
 See [`release/v2.0.0/RELEASE_NOTES.md`](release/v2.0.0/RELEASE_NOTES.md) and [`release/v2.0.0/SHA256SUMS.txt`](release/v2.0.0/SHA256SUMS.txt).
 
-## Integrity status of the frozen scientific master
+## Integrity status
 
-At scientific closure:
+The source scientific freeze recorded:
 
 - 276/276 numeric verification checks: **PASS**;
 - Monte-Carlo precision extension: **84/84 complete**;
-- scientific-master manifest: **210/210 SHA-256 PASS**;
-- governance v1.39 manifest: **501/501 SHA-256 PASS**;
-- post-ZIP verification: **0 missing / 0 extra / 0 hash mismatch**;
-- no new scientific experiment was authorized after the freeze.
+- source scientific-master manifest: **210/210 SHA-256 PASS**;
+- source governance v1.39 manifest: **501/501 SHA-256 PASS**.
 
-## Repository layout
-
-The Git tree retains the original base-grid implementation:
-
-```text
-vit-pe-compression/
-├── data/                 # ImageNet-100 class/validation metadata helpers
-├── models/               # ViT-B/16 + Learned/Sinusoidal/RoPE/ALiBi implementations
-├── notebooks/            # historical base-grid workflow/sanity check
-├── results/              # original 876-configuration compression grid
-├── scripts/              # pruning, PTQ, CKA, analysis and asset generation
-├── release/v2.0.0/       # final-release notes and immutable payload hash
-├── CITATION.cff
-├── .zenodo.json
-├── LICENSE
-└── LICENSE_SCOPE.md
-```
-
-The **later controlled-intervention program is distributed in the v2.0.0 replication archive**, rather than being retroactively mixed into the historical base-grid directories.
+The public v2.0.0 ZIP has a separate release manifest covering every distributed file.
 
 ## Checkpoints and dataset
 
-The original base-grid layer uses twelve author-trained ViT-B/16 ImageNet-100 checkpoints (Learned, Sinusoidal, RoPE, ALiBi × seeds 42/123/456); later replication stages use the explicitly documented frozen checkpoint extensions recorded in the scientific master.
+Dataset images and trained checkpoint binaries are not duplicated in the public ZIP. Exact checkpoint SHA-256 identities and dataset/sample manifests are retained so external copies can be verified before execution.
 
-Checkpoint binaries and ImageNet images are not duplicated in the release because of size and distribution constraints. The frozen scientific master retains exact checkpoint SHA-256 identities and dataset/sample manifests so externally stored copies can be verified before execution.
+The original twelve ViT-B/16 ImageNet-100 checkpoints used by the historical base-grid cohort remain available at the historical public storage location: [Google Drive folder (~3.8 GB)](https://drive.google.com/drive/folders/1WRhjaR3WZHIi2fTi9xcrIBJkBXZddMM9).
 
-The original twelve ViT-B checkpoints remain available at the historical public storage location: [Google Drive folder (~3.8 GB)](https://drive.google.com/drive/folders/1WRhjaR3WZHIi2fTi9xcrIBJkBXZddMM9). This link is stated only for the original twelve-model base-grid cohort; later frozen checkpoint extensions are identified by their hashes/manifests in the scientific master and are not implicitly claimed to be contained in that folder.
+That link is stated only for the original twelve-model cohort. Later frozen checkpoint extensions are identified by their hashes/manifests in v2.0.0 and are not implicitly claimed to be contained in that historical folder.
 
 ## Reproducibility map
 
-For the final paper, start from the v2.0.0 public replication archive rather than from the historical notebooks alone. The scientific master contains the protocols, executed evidence, sensitivity analyses, hashes, scientific manuscript master, and governance provenance needed to trace the final results.
+The v2.0.0 archive contains:
 
-The balanced-`K=72` selector result is a frozen same-estimand replication layer. The ALiBi LOW/MID/HIGH complete-derangement bracket is a designed **post-hoc diagnostic**, not a preregistered random sample from the assignment space. Those epistemic roles are preserved explicitly in the manuscript and in the release records.
+```text
+VITPECOMP_REPLICATION_PACKAGE_v2_0_0_20260907/
+  governance/
+  notebooks/
+  protocols/
+  executed_evidence/
+  reproduction/
+  expected_outputs/
+  RELEASE_MANIFEST_SHA256.txt
+```
 
-## Zenodo / citation
+The balanced-`K=72` selector result is a frozen same-estimand replication layer. The ALiBi LOW/MID/HIGH complete-derangement bracket is a designed **post-hoc diagnostic**, not a preregistered random sample from the assignment space. Those epistemic roles are preserved explicitly in the release records.
 
-The repository already has a Zenodo record associated with the historical `v1.0.0` release (`10.5281/zenodo.20527499`). The final study should cite the **new v2.0.0 version DOI**, not the historical release DOI.
+## Zenodo
 
-For v2.0.0, the complete replication ZIP is deposited as a **manual new version** of the existing Zenodo record. This is intentional: Zenodo's GitHub integration archives the repository source snapshot, but extra GitHub release assets are not automatically included. The v2.0.0 version DOI will be added here and to `CITATION.cff` once reserved/published.
+Automatic GitHub-to-Zenodo release ingestion is disabled for this repository. Version `v2.0.0` is deposited manually as a new version of the existing Zenodo record so the exact replication ZIP above is the archived payload.
 
-Citation metadata are prepared in [`CITATION.cff`](CITATION.cff) and [`.zenodo.json`](.zenodo.json).
+Citation metadata for the exact release are in [`CITATION.cff`](CITATION.cff). The manuscript-facing persistent link is the concept DOI `10.5281/zenodo.20527499`.
 
 ## Licensing
 
-The repository contains mixed scholarly materials. The root MIT license applies to project code. Project-generated machine-readable result summaries and figures/tables are intended for reuse under CC BY 4.0. Manuscript text/source is included for exact scholarly provenance and is not covered by the MIT software license. See [`LICENSE_SCOPE.md`](LICENSE_SCOPE.md) for the complete scope statement.
+The repository contains mixed scholarly materials. The root MIT license applies to project code. Project-generated machine-readable result summaries and figures/tables are intended for reuse under CC BY 4.0. See [`LICENSE_SCOPE.md`](LICENSE_SCOPE.md) for the file-level scope.
