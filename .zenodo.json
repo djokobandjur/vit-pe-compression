@@ -11,10 +11,10 @@
   ],
   "title": "Intervention Geometry Shapes Apparent Positional-Encoding Robustness in Vision Transformers: Replication Package",
   "version": "2.0.0",
-  "publication_date": "2026-09-06",
+  "publication_date": "2026-09-07",
   "upload_type": "software",
   "access_right": "open",
-  "license": "mit",
+  "license": "other-open",
   "language": "eng",
   "keywords": [
     "Vision Transformer",
@@ -25,5 +25,5 @@
     "intervention audit",
     "reproducibility"
   ],
-  "description": "Frozen replication release for the Neural Networks manuscript 'Intervention Geometry Shapes Apparent Positional-Encoding Robustness in Vision Transformers'. The release preserves the scientific master, frozen protocols, executed selector-replication and ALiBi slope-assignment evidence, sensitivity analyses, checkpoint/sample provenance, SHA-256 manifests, and the final Main/Supplement submission source layer. The repository contains mixed scholarly materials; see LICENSE_SCOPE.md for file-level licensing."
+  "description": "Frozen replication release for the manuscript 'Intervention Geometry Shapes Apparent Positional-Encoding Robustness in Vision Transformers'. The release preserves the scientific master, frozen protocols, executed selector-replication and ALiBi slope-assignment evidence, sensitivity analyses, checkpoint/sample provenance, and SHA-256 manifests. The archive contains mixed scholarly materials under file-specific rights; see LICENSE_SCOPE.md."
 }
