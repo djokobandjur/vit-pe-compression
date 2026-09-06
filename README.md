@@ -91,7 +91,9 @@ The **later controlled-intervention program is distributed in the v2.0.0 replica
 
 The original base-grid layer uses twelve author-trained ViT-B/16 ImageNet-100 checkpoints (Learned, Sinusoidal, RoPE, ALiBi × seeds 42/123/456); later replication stages use the explicitly documented frozen checkpoint extensions recorded in the scientific master.
 
-Checkpoint binaries and ImageNet images are not duplicated in the release because of size and distribution constraints. The frozen scientific master retains exact checkpoint SHA-256 identities and dataset/sample manifests so externally stored copies can be verified before execution. The original twelve ViT-B checkpoints remain available from the public storage location documented in the historical workflow.
+Checkpoint binaries and ImageNet images are not duplicated in the release because of size and distribution constraints. The frozen scientific master retains exact checkpoint SHA-256 identities and dataset/sample manifests so externally stored copies can be verified before execution.
+
+The original twelve ViT-B checkpoints remain available at the historical public storage location: [Google Drive folder (~3.8 GB)](https://drive.google.com/drive/folders/1WRhjaR3WZHIi2fTi9xcrIBJkBXZddMM9). This link is stated only for the original twelve-model base-grid cohort; later frozen checkpoint extensions are identified by their hashes/manifests in the scientific master and are not implicitly claimed to be contained in that folder.
 
 ## Reproducibility map
 
