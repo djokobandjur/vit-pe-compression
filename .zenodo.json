@@ -25,5 +25,5 @@
     "intervention audit",
     "reproducibility"
   ],
-  "description": "Frozen replication release for the manuscript 'Intervention Geometry Shapes Apparent Positional-Encoding Robustness in Vision Transformers'. The release preserves the scientific master, frozen protocols, executed selector-replication and ALiBi slope-assignment evidence, sensitivity analyses, checkpoint/sample provenance, and SHA-256 manifests. The archive contains mixed scholarly materials under file-specific rights; see LICENSE_SCOPE.md."
+  "description": "Replication-only v2.0.0 release for the manuscript 'Intervention Geometry Shapes Apparent Positional-Encoding Robustness in Vision Transformers'. The archive contains frozen protocols, execution notebooks and source, masks and calibration/sample manifests, executed raw and aggregated evidence, sensitivity analyses, checkpoint provenance, plot data, expected outputs, and SHA-256 manifests. Manuscript, Supplement, bibliography, and Editorial Manager submission files are intentionally excluded. Mixed scholarly materials use file-specific rights; see LICENSE_SCOPE.md."
 }
