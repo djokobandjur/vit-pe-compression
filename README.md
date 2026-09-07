@@ -43,7 +43,7 @@ The public replication archive is:
 
 SHA-256:
 
-`70c7ec84a30de6614c1ee7daa30f7eee41bfb278e678fca810f301608945556c`
+`c93e8f3625c9b784458ea647e1756f66a8238a23830e1c94267c8215f116d119`
 
 This ZIP is deliberately **replication-only**. It does **not** contain the manuscript, Supplement, bibliography, cover letter, highlights, or Editorial Manager source package. It was assembled from byte-preserved scientific artifacts in the frozen source snapshots while excluding publication-development material.
 
@@ -71,9 +71,9 @@ The public v2.0.0 ZIP has a separate release manifest covering every distributed
 
 Dataset images and trained checkpoint binaries are not duplicated in the public ZIP. Exact checkpoint SHA-256 identities and dataset/sample manifests are retained so external copies can be verified before execution.
 
-The original twelve ViT-B/16 ImageNet-100 checkpoints used by the historical base-grid cohort remain available at the historical public storage location: [Google Drive folder (~3.8 GB)](https://drive.google.com/drive/folders/1WRhjaR3WZHIi2fTi9xcrIBJkBXZddMM9).
+All **24 ViT-B/16 ImageNet-100 checkpoints used in the final study** (Learned, Sinusoidal, RoPE, ALiBi × seeds 42, 123, 456, 789, 1011, 1213) are publicly available in the shared [ImageNet100 Google Drive folder](https://drive.google.com/drive/folders/1QH3EG9mf6oSWwzwrhdp599S5VB_hShZx?usp=drive_link).
 
-That link is stated only for the original twelve-model cohort. Later frozen checkpoint extensions are identified by their hashes/manifests in v2.0.0 and are not implicitly claimed to be contained in that historical folder.
+A release-time byte audit recomputed SHA-256 over all 24 public `best_model.pth` files and matched the two frozen experiment manifests **24/24, with 0 mismatches** in family, seed, byte size, and SHA-256. See [`CHECKPOINT_ACCESS_AND_SHA256.md`](CHECKPOINT_ACCESS_AND_SHA256.md) for the complete table and verification mapping.
 
 ## Reproducibility map
 
@@ -81,6 +81,7 @@ The v2.0.0 archive contains:
 
 ```text
 VITPECOMP_REPLICATION_PACKAGE_v2_0_0_20260907/
+  CHECKPOINT_ACCESS_AND_SHA256.md
   governance/
   notebooks/
   protocols/
