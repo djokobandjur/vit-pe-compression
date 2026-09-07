@@ -1,0 +1,29 @@
+{
+  "creators": [
+    {
+      "name": "Banđur, Đoko",
+      "affiliation": "Faculty of Technical Sciences, University of Pristina"
+    },
+    {
+      "name": "Banđur, Miloš",
+      "affiliation": "Faculty of Technical Sciences, University of Pristina"
+    }
+  ],
+  "title": "Intervention Geometry Shapes Apparent Positional-Encoding Robustness in Vision Transformers: Replication Package",
+  "version": "2.0.0",
+  "publication_date": "2026-09-07",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "other-open",
+  "language": "eng",
+  "keywords": [
+    "Vision Transformer",
+    "positional encoding",
+    "mechanistic analysis",
+    "model compression",
+    "attention-head ablation",
+    "intervention audit",
+    "reproducibility"
+  ],
+  "description": "Replication-only v2.0.0 release for the manuscript 'Intervention Geometry Shapes Apparent Positional-Encoding Robustness in Vision Transformers'. The archive contains frozen protocols, execution notebooks and source, masks and calibration/sample manifests, executed raw and aggregated evidence, sensitivity analyses, checkpoint provenance, plot data, expected outputs, and SHA-256 manifests. Manuscript, Supplement, bibliography, and Editorial Manager submission files are intentionally excluded. Mixed scholarly materials use file-specific rights; see LICENSE_SCOPE.md."
+}
