@@ -20,7 +20,7 @@ Use the following byte-identical archive as the GitHub v2.0.0 release asset and 
 
 SHA-256:
 
-`70c7ec84a30de6614c1ee7daa30f7eee41bfb278e678fca810f301608945556c`
+`c93e8f3625c9b784458ea647e1756f66a8238a23830e1c94267c8215f116d119`
 
 The archive contains replication materials only: code/notebooks, frozen protocol locks, masks/manifests, executed raw/aggregated evidence, sensitivity analyses, checkpoint/sample provenance, plot data, expected outputs, and a release-level SHA-256 manifest.
 
@@ -38,6 +38,14 @@ Those complete source ZIPs are not distributed as v2.0.0 because they also conta
 ## Scientific-release status
 
 The source freeze records 276/276 numeric checks PASS, 84/84 Monte-Carlo precision-extension evaluations complete, 210/210 scientific-master manifest entries verified, and 501/501 governance v1.39 entries verified. No scientific experiment is reopened by this release.
+
+## Checkpoint availability closure
+
+All 24 ViT-B/16 ImageNet-100 checkpoints used in the final study are publicly available in the shared Google Drive folder:
+
+`https://drive.google.com/drive/folders/1QH3EG9mf6oSWwzwrhdp599S5VB_hShZx?usp=drive_link`
+
+A release-time audit recomputed SHA-256 over every public `best_model.pth`. The public copies matched the frozen discovery/base and held-out checkpoint manifests **24/24**, with zero mismatches in PE family, seed, byte size, or SHA-256. The complete verification table is in `CHECKPOINT_ACCESS_AND_SHA256.md`.
 
 ## Main controlled results represented in v2.0.0
 
